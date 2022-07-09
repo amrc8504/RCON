@@ -1,0 +1,286 @@
+{
+    "ingamePrefix": "-",
+    "autoUpdate": {
+        "enabled": true,
+        "checkInterval": 30
+    },
+    "consoleTimezone": "",
+    "bot": {
+        "token": "",
+        "publicKey": "",
+        "id": ""
+    },
+    "syncServerPunishments": false,
+    "servers": [
+        {
+            "name": "Snowman's Server",
+            "rcon": {
+                "host": "45.137.247.41",
+                "port": 29600,
+                "password": "6F16ITn7",
+                "adminListSaving": true,
+                "ignoreGlobalPunishments": false,
+                "teleportSystem": false,
+                "killstreaks": {
+                    "enabled": true,
+                    "countBotKills": false
+                },
+                "automod": true,
+                "punishments": {
+                    "shouldSave": true,
+                    "types": {
+                        "kicks": false,
+                        "bans": true,
+                        "unbans": true,
+                        "mutes": true,
+                        "unmutes": false
+                    }
+                },
+                "status": {
+                    "updateInterval": 5,
+                    "channel": "",
+                    "showPlayerList": false,
+                    "hideIPPort": false,
+                    "fallbackValues": {
+                        "serverName": "",
+                        "serverPort": 0,
+                        "maxPlayerCount": 0,
+                        "passwordProtected": false
+                    }
+                },
+                "mapVote": {
+                    "enabled": true,
+                    "voteDuration": 30,
+                    "voteCooldown": 240,
+                    "voteThreshold": 0.6,
+                    "initialDelay": 30,
+                    "maps": [
+                        {
+                            "shownName": "Contraband",
+                            "map": "ffa_contraband"
+                        }
+                    ]
+                },
+                "saveAdminActivity": true,
+                "stats": {
+                    "adminActionWebhookChannel": "",
+                    "serverLagReportsWebhookChannel": ""
+                },
+                "serverDownNotification": {
+                    "timer": 5,
+                    "channel": ""
+                },
+                "logChannels": {
+                    "chat": "",
+                    "punishments": "",
+                    "activity": "",
+                    "wanted": "",
+                    "permanent": "",
+                    "automod": "",
+                    "killstreak": "",
+                    "adminCalls": "",
+                    "warns": ""
+                },
+                "ingameCommands": [
+                    "timeleft",
+                    "killstreak",
+                    "requestadmin",
+                    "topkillstreak",
+                    "ban",
+                    "kick",
+                    "mute",
+                    "unban",
+                    "unmute",
+                    "kill"
+                ]
+            }
+        }
+    ],
+    "adminListSaving": {
+        "rollbackAdmins": true
+    },
+    "killstreakMessages": {
+        "1": "{name} got first blood!",
+        "5": "KILLING SPREE! {name} has a killstreak of {kills}!",
+        "10": "RAMPAGE! {name} has a killstreak of {kills}!",
+        "15": "DOMINATING! {name} has a killstreak of {kills}!",
+        "20": "UNSTOPPABLE! {name} has a killstreak of {kills}!",
+        "25": "GODLIKE! {name} has a killstreak of {kills}!",
+        "30": "WICKED SICK! {name} has a killstreak of {kills}!"
+    },
+    "automod": {
+        "infiniteDurationScaling": true,
+        "adminsBypass": true,
+        "infractionThresholds": {
+            "1": {
+                "type": "message",
+                "message": "{name}, watch your language!"
+            },
+            "2": {
+                "type": "mute",
+                "message": "Muted {name} for profane messages!",
+                "duration": 300
+            },
+            "3": {
+                "type": "kick",
+                "message": "Kicked {name} for profane messages!",
+                "reason": "Sending profane messages (Profane words: {words})"
+            },
+            "4": {
+                "type": "ban",
+                "message": "Banned {name} for profane messages!",
+                "duration": 300,
+                "reason": "Sending profane messages (Profane words: {words})"
+            },
+            "5": {
+                "type": "globalmute",
+                "message": "Globally muted {name} for profane messages!",
+                "duration": 300
+            },
+            "6": {
+                "type": "globalban",
+                "message": "Globally banned {name} for profane messages!",
+                "duration": 300,
+                "reason": "Sending profane messages (Profane words: {words})"
+            }
+        }
+    },
+    "warns": {
+        "infiniteDurationScaling": true,
+        "resetAfterDuration": 43830,
+        "infractionThresholds": {
+            "1": {
+                "type": "message",
+                "message": "{name} now has {currentWarns}/{maxWarns} warnings!"
+            },
+            "2": {
+                "type": "mute",
+                "message": "{name} now has {currentWarns}/{maxWarns} warnings and got muted!",
+                "duration": 300
+            },
+            "3": {
+                "type": "kick",
+                "message": "{name} now has {currentWarns}/{maxWarns} warnings and got kicked!",
+                "reason": "You reached a warning infraction threshold ({currentWarns}/{maxWarns})"
+            },
+            "4": {
+                "type": "ban",
+                "message": "{name} now has {currentWarns}/{maxWarns} warnings and got banned!",
+                "duration": 300,
+                "reason": "You reached a warning infraction threshold ({currentWarns}/{maxWarns})"
+            },
+            "5": {
+                "type": "globalmute",
+                "message": "{name} now has {currentWarns}/{maxWarns} warnings and got globally muted!",
+                "duration": 300
+            },
+            "6": {
+                "type": "globalban",
+                "message": "{name} now has {currentWarns}/{maxWarns} warnings and got globally banned!",
+                "duration": 300,
+                "reason": "You reached a warning infraction threshold ({currentWarns}/{maxWarns})"
+            }
+        }
+    },
+    "discord": {
+        "roles": [
+            {
+                "name": "Mods",
+                "Ids": [""],
+                "commands": [
+                    "admins",
+                    "ban",
+                    "banned",
+                    "chatlog",
+                    "history",
+                    "kick",
+                    "mute",
+                    "rename",
+                    "kill",
+                    "say",
+                    "unban",
+                    "unmute",
+                    "warn",
+                    "unwarn"
+                ],
+                "receiveMentions": false
+            },
+            {
+                "name": "Admins",
+                "Ids": [""],
+                "commands": [
+                    "admins",
+                    "ban",
+                    "banned",
+                    "chatlog",
+                    "globalban",
+                    "globalmute",
+                    "globalunban",
+                    "globalunmute",
+                    "history",
+                    "kick",
+                    "mute",
+                    "rename",
+                    "kill",
+                    "say",
+                    "unban",
+                    "unmute",
+                    "warn",
+                    "unwarn",
+                    "whitelist"
+                ],
+                "receiveMentions": false
+            },
+            {
+                "name": "Owner",
+                "Ids": [""],
+                "commands": [
+                    "admins",
+                    "teleportadd",
+                    "teleportremove",
+                    "teleportedit",
+                    "ban",
+                    "banned",
+                    "chatlog",
+                    "deletehistory",
+                    "deletepunishment",
+                    "globalban",
+                    "globalmute",
+                    "globalunban",
+                    "globalunmute",
+                    "history",
+                    "kick",
+                    "mute",
+                    "rename",
+                    "kill",
+                    "say",
+                    "unban",
+                    "unmute",
+                    "warn",
+                    "unwarn",
+                    "resetwarnings",
+                    "addadmin",
+                    "removeadmin",
+                    "globaladdadmin",
+                    "globalremoveadmin",
+                    "whitelist",
+                    "rcon",
+                    "update"
+                ],
+                "receiveMentions": true
+            }
+        ]
+    },
+    "mordhau": {
+        "accountId": ""
+    },
+    "steam": {
+        "key": ""
+    },
+    "database": {
+        "host": "",
+        "database": "",
+        "username": "",
+        "password": ""
+    }
+}
